@@ -30,7 +30,7 @@ Estamos en la segunda parte, la parte intermedia (Mid) de C++.
 - Realice operaciones de entrada y salida con secuencias.
 - Defina valores constantes nombrados mediante enumeraciones, lo que mejora la legibilidad del código.
 
-### C++ parte
+### C++ parte 3
 
 - Comprender los principios de la programación orientada a objetos (POO).
 - Técnicas avanzadas para la herencia de clases, incluidas las funciones virtuales y las clases abstractas.
