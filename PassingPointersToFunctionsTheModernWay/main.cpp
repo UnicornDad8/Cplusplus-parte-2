@@ -1,6 +1,6 @@
 // C++ (intermedio) - Pointers
 // ------------------------------------------------------------------------------
-// Pasando punteros a funciones. (The moddern way)
+// Parametros por referencia, sin necesidad de usar punteros. (The moddern way)
 
 #include <iostream>
 
