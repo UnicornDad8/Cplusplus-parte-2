@@ -20,7 +20,7 @@
 using namespace std;
 
 string longestCommonPrefix(vector<string>& strs) {
-    size_t n = strs.size();
+    int n = strs.size();
 
     if(strs.empty()) return "";
 
