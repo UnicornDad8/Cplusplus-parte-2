@@ -1,6 +1,8 @@
 // C++ (intermedio) - Strutures and Enumerations
 // -----------------------------------------------------------------------------------------------
 // Comparando estructuras usando un metodo "equals" dentro de la estructura.
+// Se llama "metodo" a las funciones que son parte de un objeto, en nuestro caso la structura
+// es un objeto.
 
 #include <iostream>
 
@@ -17,7 +19,8 @@ struct Movie {
     Date releaseDate;
     bool isPopular = true;
     
-    bool equals(Movie movie) {
+    // Method
+    bool equals(const Movie& movie) {
         return (
                 title == movie.title &&
                 releaseDate.year == movie.releaseDate.year &&
