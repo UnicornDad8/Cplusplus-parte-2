@@ -79,13 +79,13 @@ ListNode* arrayToList(int arr[], int n)
     return root;
 }
 
-void display(ListNode* root)
-{
+ostream& operator<<(ostream& stream, ListNode* root) {
     while (root != nullptr) {
-        cout << root -> val << " ";
+        stream << root -> val << " ";
         root = root -> next;
     }
     cout << "\n";
+    return stream;
 }
 
 
@@ -99,7 +99,7 @@ int main() {
     ListNode* list1 = arrayToList(arr1, n);
     ListNode* list2 = arrayToList(arr2, m);
     
-    display(mergeTwoLists(list1, list2));
+    cout << (mergeTwoLists(list1, list2));
 
     return 0;
 }
