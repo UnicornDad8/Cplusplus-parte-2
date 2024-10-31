@@ -23,7 +23,6 @@
 // display the mergeTwoLists Example 1 on console.
 
 #include <iostream>
-#include <cstddef>
 
 using namespace std;
 
