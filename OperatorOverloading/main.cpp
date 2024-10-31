@@ -1,6 +1,6 @@
 // C++ (intermedio) - Strutures and Enumerations
 // -----------------------------------------------------------------------------------------------
-// Sobrecargando operadores.
+// Sobreacarga de operadores.
 
 #include <iostream>
 
@@ -27,7 +27,7 @@ bool operator==(const Movie& first, const Movie& second) {
     );
 }
 
-ostream& operator<<(ostream& stream, Movie& movie) {
+ostream& operator<<(ostream& stream, const Movie& movie) {
     stream << "{ " << movie.title << ", " << movie.releaseDate.year
            << " / " << movie.releaseDate.month << " / " << movie.releaseDate.day << " }" << endl;
     return stream;
