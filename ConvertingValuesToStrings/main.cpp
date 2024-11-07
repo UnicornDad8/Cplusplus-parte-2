@@ -1,6 +1,8 @@
 // C++ (intermedio) - Streams and Files
 // -----------------------------------------------------------------------------------------------
 // Convirtiendo valores en cadenas de texto.
+//
+// Ejercicio: Haz una funcion que covierta el numero con una precision de comas dada en un string.
 
 #include <iostream>
 #include <sstream>
@@ -8,14 +10,19 @@
 
 using namespace std;
 
-int main() {
-    double number = 12.34;
+// overloading the to_string method
+string to_string(double number, int precision) {
     stringstream stream;
     
-    stream << fixed << setprecision(2) << number << endl;
-    string str = stream.str();
+    stream << fixed << setprecision(precision) << number << endl;
     
-    cout << str << endl;
+    return stream.str();
+}
+
+int main() {
+    double number = 12.34;
+    
+    cout << to_string(number, 2) << endl;
     
     return 0;
 }
